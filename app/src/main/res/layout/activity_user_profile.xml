@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:keepScreenOn="true"
+    tools:context=".UserProfile.UserProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <TextView
+            android:id="@+id/tv_check_connection4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Connection establised !"
+            android:layout_marginTop="80dp"
+            android:visibility="invisible"
+            android:padding="25dp"
+            android:gravity="center"
+            />
+
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+
+            android:id="@+id/et_visit"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp"
+            android:drawableStart="@drawable/times"
+            android:drawablePadding="15dp"
+            android:hint="@string/visit"
+            app:met_floatingLabel="normal"
+
+            />
+
+
+
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/et_visit"
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="15dp"
+            android:hint="@string/name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/et_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:drawableStart="@drawable/ic_call"
+
+            android:drawablePadding="15dp"
+            android:hint="@string/phone"
+            android:inputType="phone" />
+
+
+
+
+        <!--<LinearLayout
+            android:id="@+id/et_visit"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_phone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:drawablePadding="15dp"
+            android:orientation="horizontal"
+
+
+            >
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/et_visit1"
+                android:layout_height="60dp"
+                android:layout_below="@id/et_phone"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableStart="@drawable/times"
+                android:drawablePadding="15dp"
+                android:hint="@string/visit"
+                android:inputType="none" />
+
+            <Spinner
+                android:id="@+id/Spinner01"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/times"
+                android:hint="@string/visit"
+                android:inputType="numberPassword" />
+
+
+        </LinearLayout>
+
+-->
+        <EditText
+            android:id="@+id/et_comment"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/et_phone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:drawableStart="@drawable/ic_chat"
+            android:drawablePadding="15dp"
+            android:hint="@string/comment"
+            android:inputType="text" />
+
+
+        <Button
+            android:id="@+id/btn_Done"
+            style="@style/Button_style"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_comment"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="@string/Done" />
+    </RelativeLayout>
+</ScrollView>

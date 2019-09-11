@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "896300835330",
+    "firebase_url": "https://arabiata-23249.firebaseio.com",
+    "project_id": "arabiata-23249",
+    "storage_bucket": "arabiata-23249.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896300835330:android:91fde0d97e423d5a",
+        "android_client_info": {
+          "package_name": "arabiata.company.leen.com.arabiataapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896300835330-avvi3ptfts6hk04eis6r94lq3k99a2ov.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "arabiata.company.leen.com.arabiataapp",
+            "certificate_hash": "6cb95d7fb80f5c274d3b925cf99f4457ce378bfb"
+          }
+        },
+        {
+          "client_id": "896300835330-kala0ion0cplsq2gahlhe0m15rslv0tq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdy7-FoNwur0LWMS9Ir_8uh4nH8rq00Tc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896300835330-kala0ion0cplsq2gahlhe0m15rslv0tq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896300835330:android:891d485408a558de",
+        "android_client_info": {
+          "package_name": "arabiata.company.leen.com.arabiataapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896300835330-kala0ion0cplsq2gahlhe0m15rslv0tq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdy7-FoNwur0LWMS9Ir_8uh4nH8rq00Tc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

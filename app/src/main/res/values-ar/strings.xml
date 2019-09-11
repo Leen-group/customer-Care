@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">أرابياتا</string>
+    <string name="email">البريد الالكترونى</string>
+    <string name="password">كلمة السر</string>
+    <string name="login">تسجيل دخول</string>
+    <string name="next">التالى</string>
+    <string name="name">الأسم</string>
+    <string name="phone">رقم الهاتف</string>
+    <string name="visit">عدد مرات الزياره</string>
+    <string name="comment">تعليق</string>
+    <string name="thank_you">ِشكراً لك</string>
+    <string name="Done">تم</string>
+    <string name="validemail">من فضلك أدخل بريد الالكترونى صحيح</string>
+    <string name="validpassword">من فضلك أدخل كلمه مرور صحيحه</string>
+    <string name="missing">من فضلك أدخل المطلوب</string>
+    <string name="change_lang">تغير اللغه</string>
+    <string name="logout">تسجيل خروج</string>
+    <string name="wrong_login">خطأ فى كلمة المرور أو البريد الالكترونى</string>
+    <string name="right_login">تم التسجيل بنجاح</string>
+    <string name="lang">ar</string>
+    <string name="jan">يناير</string>
+    <string name="feb">فبراير</string>
+    <string name="march">مارس</string>
+    <string name="april">ابريل</string>
+    <string name="may">مايو</string>
+    <string name="june">يونيو</string>
+    <string name="july">يوليو</string>
+    <string name="aug">اغسطس</string>
+    <string name="sept">سبتمبر</string>
+    <string name="oct">أكتوبر</string>
+    <string name="nov">نوفمبر</string>
+    <string name="dec">ديسمبر</string>
+    <string name="chartTittle">"تقييم آراء  الزبائن "</string>
+    <string name="months">الشهور</string>
+    <string name="NumberofUsers">عدد الزبائن</string>
+    <string name="unhappy">غير سعيد</string>
+    <string name="happy">سعيد</string>
+    <string name="vs">مقابل</string>
+    <string name="AllBranches">كل الفروع</string>
+    <string name="my_notification">أشعارات</string>
+    <string name="commentnoti">أشعار</string>
+    <string name="in">في</string>
+    <string name="survey">إستطلاع رأى</string>
+    <string name="cancel">إلغاء</string>
+    <string name="rating">تم التسجيل بنجاح</string>
+
+    <string name="daily">يومياً</string>
+    <string name="weekly">إسبوعياً</string>
+    <string name="monthly">شهرياً</string>
+    <string name="rarely">نادراً</string>
+    <string name="is">يكون</string>
+    <string name="noti">"تحقق من تطبيق أرابياتا "</string>
+    <string name="channel_name">شانل نيم</string>
+    <string name="channel_description">شانل ديسكربشن</string>
+    <string name="batterylevel">بطاريتك</string>
+    <string name="validmobile">من فضلك أدخل رقم هاتف صحيح</string>
+
+    <string name="ok">موافق</string>
+    <string name="To">نهايه الفتره</string>
+    <string name="markyourdate">بدايه الفتره</string>
+    <string name="pleasechoosedateinthefirstcalender">من فضلك اختر الوقت في كل تقويم</string>
+
+
+</resources>
