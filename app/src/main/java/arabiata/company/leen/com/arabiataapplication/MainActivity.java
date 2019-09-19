@@ -118,10 +118,13 @@ String validemail;
             startActivity(i);
             finish();
         }
-
+        // for run admin user
+        /*
         Intent intent = new Intent (MainActivity.this, AdminHomeActivity
                 .class);
         startActivity(intent);
+        */
+
          // batterystatus();
         iv_happy.setOnClickListener(new View.OnClickListener() {
             @Override
