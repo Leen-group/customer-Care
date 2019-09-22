@@ -1,5 +1,6 @@
 package arabiata.company.leen.com.arabiataapplication.Survey;
 
+import android.app.ProgressDialog;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -21,7 +22,7 @@ public class SurveyPresenter extends BasePresenter {
     SurveyActivity context;
     SurveyView view;
     ApiClient apiClient;
-
+    ProgressDialog progressDoalog;
 
     List<SurveyModelItem> arraySurvey;
 
@@ -34,6 +35,14 @@ public class SurveyPresenter extends BasePresenter {
     //LoginAPi
     public void GetSurveyApi() {
 
+        //emad : show the dialog before the data come and show it
+        progressDoalog = new ProgressDialog(context);
+        progressDoalog.setMessage("Loading....");
+        progressDoalog.setTitle("Connecting..");
+        progressDoalog.setMax(30);
+
+        // show it
+        progressDoalog.show();
         apiClient.setBASE_URL("https://arabiata-app.com/api/en/");
         String phoneLang = context.getResources().getString(R.string.lang);
         Log.i("TAG", "language: "+ phoneLang);
@@ -67,10 +76,14 @@ public class SurveyPresenter extends BasePresenter {
                         // refreshing survey adapter inside recycler view
                         context.surveyAdapter.notifyDataSetChanged();
                         //view.NavigateToMain();
+                        //when data come dismiss the dialog ....
+                        progressDoalog.dismiss();
                     }
 
                 } else {
 
+                    //if error happened dismiss dialog
+                    progressDoalog.dismiss();
                     Toast.makeText(context, "Check connection", Toast.LENGTH_SHORT).show();
                 }
 
@@ -79,7 +92,8 @@ public class SurveyPresenter extends BasePresenter {
 
             @Override
             public void onFailure(Call<SurveyModel> call, Throwable t) {
-
+                //when data failed dismiss the dialog
+                progressDoalog.dismiss();
                 Toast.makeText(context, "Check connection", Toast.LENGTH_SHORT).show();
 
             }

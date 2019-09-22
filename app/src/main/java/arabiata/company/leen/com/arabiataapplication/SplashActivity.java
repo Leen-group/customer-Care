@@ -28,14 +28,16 @@ public class SplashActivity extends AppCompatActivity {
 
         //Set fullscreen
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        //getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_spalsh);
 
         apiClient.setBASE_URL("https://arabiata-app.com/api/en/");
-         String phoneLang = getResources().getString(R.string.lang);
+        String phoneLang = getResources().getString(R.string.lang);
         Log.i("TAG", "language: "+ phoneLang);
-        startService(new Intent(this, BatteryService.class));
+
+        //comment this line cause dont need batteryService
+        //  startService(new Intent(this, BatteryService.class));
 
         switch (phoneLang) {
             case "eng":
@@ -47,34 +49,41 @@ public class SplashActivity extends AppCompatActivity {
             default:
                 apiClient.setBASE_URL("https://arabiata-app.com/api/en/");
         }
-
-
-        final long period = 30;
-        timer = new Timer();
-        timer.schedule(new TimerTask() {
+//only simple timer for splash screen to show 3 seconds
+        TimerTask timerTask = new TimerTask() {
             @Override
             public void run() {
-                //this repeats every 100 ms
-                if (i < 100) {
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            //  textView.setText(String.valueOf(i)+"%");
-                        }
-                    });
-                    //          progressBar.setProgress(i);
-                    i++;
-                } else {
-                    //closing the timer
-                    timer.cancel();
-                        Intent intent = new Intent(SplashActivity.this, MainActivity
-                                .class);
-                        startActivity(intent);
-                        // close this activity
-                        finish();
-                }
+                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                finish();
             }
-        }, 0, period);
-    }
+        };
+        new Timer().schedule(timerTask,3000);
 
+//emad commented the below cause it use batteryService that we don't need
+//        final long period = 30;
+//        timer = new Timer();
+//        timer.schedule(new TimerTask() {
+//            @Override
+//            public void run() {
+//                //this repeats every 100 ms
+//                if (i < 100) {
+//                    runOnUiThread(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            //  textView.setText(String.valueOf(i)+"%");
+//                        }
+//                    });
+//                    //          progressBar.setProgress(i);
+//                    i++;
+//                } else {
+//                    //closing the timer
+//                    timer.cancel();
+//                        Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+//                        startActivity(intent);
+//                        // close this activity
+//                        finish();
+//                }
+//            }
+//        }, 0, period);
+    }
 }
